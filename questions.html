@@ -8,19 +8,66 @@
 	
 	
 	<style>
+		html{ 
+		 	background: url(tree.jpg) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+		}			
+		.transbox {
+			    width: auto;
+			    height: auto;
+			    border: 3px solid #0CBAFF;
+			    position: relative;
+			}
+
+		
+		.opaque
+			{
+			padding:0% 1% 0%;
+			background:#7f7f7f;
+			background: rgba(0,0,0,.3);
+			 		
+	}	
+	
 		body{
-			margin:0;
+			margin:8px;
 			padding:0% 10% 0%;
 		}
-	
+
+		h2{
+
+			color: black;
+			text-shadow:
+  			-1px -1px 0 white,
+			1px -1px 0 white,
+			-1px 1px 0 white,
+			1px 1px 0 white;
+			text-indent: 5px;
+		}	
+
+		p {
+			color:white;
+			text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+			text-indent: 9px;	
+		}			
+
 		h1 {
+			color: black;
+			text-shadow:
+			-1px -1px 0 #F2FF43,
+			1px -1px 0 #F2FF43,
+			-1px 1px 0 #F2FF43,
+			1px 1px 0 #F2FF43;
 			text-align:center;
 		}
 	
 		img {
-			margin: 5px;
-			padding: 5px;
-			border: 1px solid #0000ff;
 			height: auto;
 			width: auto;
 			float: left;
@@ -35,10 +82,11 @@
 <body>
 
 
-	<div>
+	<div class="transbox">
 	
-		<h1>Michael Mocco P1</h1>
+		<h1 class="out">Michael Mocco P1</h1>
 		
+		<div class="opaque">
 		<img src='canvasprofile.jpg' alt='HikingPic'>
 		
 		<h2>In 2+ sentences describe who you are and what you do.</h2>
@@ -58,7 +106,7 @@
 		<h2>Anything else we should know?</h2>
 			<p>I'm excited to take this class!</p>
 	</div>
-	
+	</div>
 </body>
 </html>
 
